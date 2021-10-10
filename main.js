@@ -3,5 +3,5 @@
 const argv = require('minimist')(process.argv.slice(2))
 const Command = require('./lib/command')
 
-const command = new Command(argv.l)
+const command = new Command(argv.l, argv.r)
 command.run()
